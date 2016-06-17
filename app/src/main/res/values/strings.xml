@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MathQuiz</string>
+
+    <string name="questionField"></string>
+    <string name="solutionField"></string>
+    <string name="answerType"></string>
+
+    <string name="submitButton">submit</string>
+    <string name="newQuestionButton">new question</string>
+    <string name="getSolutionButton">get solution</string>
+
+    <string name="rightAnswer">that was right!</string>
+    <string name="wrongAnswer">try again!</string>
+    <string name="noAnswer">you can do better!</string>
+</resources>
