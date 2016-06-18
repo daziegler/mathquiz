@@ -48,12 +48,11 @@ public class MainActivity extends AppCompatActivity {
 
         newQuestionButton = (Button)findViewById(R.id.newQuestionButton);
         submitButton = (Button)findViewById(R.id.submitButton);
-        solutionButton = (Button)findViewById(R.id.getSolutionButton);
+        solutionButton = (Button)findViewById(R.id.solutionButton);
 
         answerField = (EditText)findViewById(R.id.answerField);
 
         questionField = (TextView)findViewById(R.id.questionField);
-        //solutionField = (TextView)findViewById(R.id.solutionField);
         answerType = (TextView)findViewById(R.id.answerType);
 
         int firstNumber = question.firstNumber;
