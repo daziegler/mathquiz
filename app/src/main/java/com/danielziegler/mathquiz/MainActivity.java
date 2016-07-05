@@ -15,7 +15,7 @@ import android.view.KeyEvent;
 import android.util.Log;
 
 /**
- * Main Activity. App starts here.
+ * The MainActivity Class is the starting point for the app.
  *
  * @author  Daniel Ziegler
  * @version 1.0
@@ -41,8 +41,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
 
         question = new Question();
 
@@ -103,6 +101,10 @@ public class MainActivity extends AppCompatActivity {
         );
     }
 
+    /**
+     * Creates the Question shown to the user via the questionField.
+     */
+
     public void createQuestion(){
         question.createQuestion();
 
@@ -116,6 +118,10 @@ public class MainActivity extends AppCompatActivity {
         answerField.setText(solutionString);
         questionField.setText(questionString);
     }
+
+    /**
+     * Compares the answer given via the answerField to the solution created in the question class.
+     */
 
     public void checkAnswer(){
         int answer;
@@ -144,6 +150,10 @@ public class MainActivity extends AppCompatActivity {
             answerType.setTextColor(Color.RED);
         }
     }
+
+    /**
+     * Gets the solution and sets some form of confirmation for the user via colored text labels.
+     */
 
     public void getSolution(){
         int solution = question.getSolution();

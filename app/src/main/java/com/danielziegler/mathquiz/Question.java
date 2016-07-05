@@ -2,9 +2,10 @@ package com.danielziegler.mathquiz;
 
 import java.util.Random;
 
-
 /**
- * Created by Daniel on 17.06.2016.
+ * Class that creates the questions for "MathQuiz" out of random numbers.
+ *
+ * @author Daniel Ziegler
  */
 public class Question {
 
@@ -18,6 +19,9 @@ public class Question {
         createQuestion();
     }
 
+    /**
+     * Creates random numbers and saves them in an array.
+     */
     public void createQuestion(){
         int min = 1;
         int max = 10;
@@ -37,6 +41,11 @@ public class Question {
         thirdNumber = numberArray[2];
     }
 
+    /**
+     * Gets the solution for the question that is later shown on screen.
+     *
+     * @return the value of the solution.
+     */
     public int getSolution() {
         int solution = firstNumber * secondNumber + thirdNumber;
         return solution;
