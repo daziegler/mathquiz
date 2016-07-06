@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Creates the Question shown to the user via the questionField.
+     * Creates the Question shown to the user via the questionField and clears the answerField.
      */
 
     public void createQuestion(){
@@ -121,6 +121,11 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Compares the answer given via the answerField to the solution created in the question class.
+     * If the answer matches the solution, a confirmation in the form of green text is given to the
+     * user, if it does not match, the text is red.
+     *
+     * <p>If the answer was correct, the variable usedSolution is also set false again.
+     * This variable prevents green success text from showing if the getSolution function was used.</p>
      */
 
     public void checkAnswer(){
@@ -152,7 +157,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Gets the solution and sets some form of confirmation for the user via colored text labels.
+     * Gets the solution and give confirmation to the user via blue colored text labels. Sets a
+     * boolean variable that indicates that the getSolution function was triggered by the user.
      */
 
     public void getSolution(){
