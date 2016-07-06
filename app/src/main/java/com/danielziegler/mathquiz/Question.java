@@ -16,13 +16,13 @@ public class Question {
     int[] numberArray;
 
     public Question(){
-        createQuestion();
+        createRandomNumbers();
     }
 
     /**
      * Creates random numbers and saves them in an array.
      */
-    public void createQuestion(){
+    public void createRandomNumbers(){
         int min = 1;
         int max = 10;
 

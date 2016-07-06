@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void createQuestion(){
-        question.createQuestion();
+        question.createRandomNumbers();
 
         int firstNumber = question.firstNumber;
         int secondNumber = question.secondNumber;
